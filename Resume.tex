@@ -1,0 +1,269 @@
+% TEMPLATE FROM:
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Bartosz Stoppel} \\ \vspace{1pt}
+    \textbf{Computer Engineer} \\ \vspace{1pt}
+    \small \href{tel:+1 (317) 989-0849}{ \raisebox{-0.1\height}\faPhone\ \underline{+1 (317)989-0849} ~} \href{mailto:bartosz.stoppel@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{bartosz.stoppel@gmail.com}} ~ 
+   \href{https://linkedin.com/in/bstoppel}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{bstoppel}}  ~
+    %\href{https://github.com/yourid}{\raisebox{-0.2\height}\faGithub\ \underline{yourid}} ~
+    %\href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    %\href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------OBJECTIVE-----------
+\section{OBJECTIVE}
+	\begin{center}
+	 	Career focusing on experience with a broad range of microcontroller testing and interest in cybersecurity.
+	\end{center}
+          \vspace{-20pt}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Purdue University}{08 2019 -- 05 2023}
+      {Bachelors Degree}{West Lafayette, IN}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      %{Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
+      {Navy}{07 2023 -- Current} 
+      {Computer/Electrical Engineer}{Crane, IN}
+      \resumeItemListStart
+	\resumeItem{\normalsize{Classified}}
+   \resumeSubHeadingListEnd
+      \resumeSubheading
+      {Purdue University}{09 2021 -- 05 2023} 
+      {Undergraduate Teaching Assistant}{West Lafayette, IN}
+      \resumeItemListStart
+	\resumeItem{\normalsize{Assisted in leading labs for Introduction to Digital Systems and Design.}}
+	\resumeItem{\normalsize{Taught Verilog, debugged circuits, and hosted office hours in the evening.}}
+   \resumeSubHeadingListEnd
+      \resumeSubheading
+      {Complete Structural Consulting Inc.}{05 2022 -- 08 2022} 
+      {Software Engineer Intern}{Fishers, IN}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Developed a software that would take barndominium parameters (eave height, roof pitch, etc.) and generate steel framing for the building.}}
+	\resumeItem{\normalsize{Replaced XCAD and adapted it to the company's project areas with this software.}}
+	\resumeItem{\normalsize{Wrote packages using the generated steel framing that included AutoCAD drawings, shop/build lists for market orders, and numerous PDFs that included all the load calculations for each part.}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \resumeSubHeadingListStart          
+      \resumeProjectHeading
+          {{\textbf{\large{{BB8 (Beep Baseball)}}}} \large{\underline{}}}{09 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Headed the hardware engineering for a team in charge of making a prototype baseball for visually handicapped individuals.}}
+            \resumeItem{\normalsize{Led the magnetic switching team that would enable speakers to indicate ball location for the player.}} 
+	    \resumeItem{\normalsize{Implemented the modern wireless charging method known as ''Qi Charging Protocol" to make the ball completely wireless.}}       
+	%\resumeItem{\textcolor{accent} {\href{Project Link} {\underline{\normalsize{Download}}}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {{\textbf{\large{{MIDI Polyphonic Synthesizer}}}} \large{\underline{}}}{11 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Took input from a MIDI device and was able to effectively synthesize the input MIDI signal with multiple different voices and volumes while adding pitch bending and fading.}}
+	     \resumeItem{\normalsize{Coded the STM micro-controller so that it would accept and process MIDI input.}}
+	     \resumeItem{\normalsize{Designed the circuit on EasyEDA and created the printed circuit board through JLC PCB.}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {{\textbf{\large{{Augmented Reality Table Tennis}}}     (aka R.A.C.H.E.L.)} \large{\underline{}}}{05 2023}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Created an interactive way to play table tennis by using a projector to display creative mini-game objectives onto a table while a tracking a ball with a depth sensor.}}
+            \resumeItem{\normalsize{Finished the schematic and PCB layout for our MCU, ordered parts, and worked on blob detection using OpenCV.}}
+            \resumeItem{\normalsize{Ended up winning Purdue's Spark Challenge and project description is on my teammate's website at \href{https://www.jacktmyers.com/engineering/rachel/}{www.jacktmyers.com/engineering/rachel/}.}}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Algorithms
+                \item Cyber Security
+                \item Data Science
+                \item Compilers
+                \item Microprocessors
+                \item PCB Design
+		\item Software Engineering
+		\item Computer Networks
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{ C\#, Python, C, C++, Verilog, Matlab, Assembly Code, LaTeX, Java}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{ VS Code, PyCharm, Intellij, TeXworks, Eclipse, AutoCAD API, KiCAD, Altium}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, GitHub, Git, WPF}} \\
+     \textbf{\normalsize{Spoken Languages:}}{\normalsize{ English, Polish}}\\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+\end{document}
